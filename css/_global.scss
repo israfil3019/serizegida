@@ -1,0 +1,53 @@
+* {
+    &,
+    &:before,
+    &:after {
+      box-sizing: border-box;
+    }
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+form {
+  margin: 0;
+}
+
+ul,
+button{
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:focus {
+  outline: none;
+  color: inherit;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+}

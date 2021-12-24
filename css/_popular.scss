@@ -1,0 +1,102 @@
+.popular {
+  margin: 50px 0;
+
+  &__title {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      color: green;
+      font-size: 2rem;
+    }
+    p {
+      color: gray;
+    }
+  }
+
+  &__images {
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    div:nth-child(1) {
+      background-image: url(../img/popular.jpg);
+      background-position: center;
+      background-size: cover;
+      background-origin:content-box
+    }
+    div:nth-child(2) {
+      background-image: url(../img/popular2.jpg);
+      background-position: center;
+      background-size: cover;
+      background-origin:content-box
+    }
+    div:nth-child(3) {
+      background-image: url(../img/popular3.jpg);
+      background-position: center;
+      background-size: cover;
+      background-origin:content-box
+    }
+  }
+  &__images-card {
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    div {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: -150px 100px 0 100px;
+      height: 200px;
+      background-color: white;
+      border-radius: 6px;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      color: gray;
+      }
+      h3 {
+        color: green;
+      }
+      h2 {
+        width: 40px;
+        margin: 10px auto;
+        border-bottom: 2px green solid;
+      }
+      button {
+        margin: 10px auto;
+        background-color: green;
+        color: white;
+        padding: 10px;
+        border-radius: 2rem;
+        cursor: pointer;
+      }
+  }
+}
+#card-two{
+  background-color: green;
+  color: white;
+  h3 {
+    color: white;
+  }
+  h2 {
+    width: 40px;
+    margin: 10px auto;
+    border-bottom: 2px white solid;
+  }
+  button {
+    margin: 10px auto;
+    background-color: white;
+    color: green;
+    padding: 10px;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+}
+

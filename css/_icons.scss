@@ -1,0 +1,20 @@
+.icons {
+  padding: 0 150px;
+  margin: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  div {
+    text-align: center;
+  }
+  svg {
+    width: 5rem;
+    height: 5rem;
+    color: green;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: x-large;
+    color: green;
+  }
+}

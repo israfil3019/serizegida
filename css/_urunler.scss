@@ -1,0 +1,118 @@
+.urunler {
+  padding: 0 150px;
+  margin: 50px 0;
+
+  &__title {
+    margin-bottom: 30px;
+
+    h1 {
+      color: green;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    p {
+      color: gray;
+      font-size: 1rem;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    border-radius: 2rem;
+    max-width: 14rem;
+    padding: 10px 3rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    background-color: rgba(18, 122, 18, 0.6);
+    color: rgb(1, 92, 1);
+    &:hover {
+      background-color: rgba(18, 122, 18, 1);
+      color: white;
+    }
+  }
+
+  &__urun {
+    display: grid;
+    grid-gap: 20px 20px;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+  }
+  &__card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: arial;
+    h3 {
+      color: green;
+      font-weight: 600;
+    }
+    h5 {
+      color: gray;
+    }
+    img {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 20px 40px 0 40px;
+      margin-top: -50px;
+      margin-bottom: 10px;
+    }
+    a > svg {
+      color: gray;
+      margin-bottom: 3rem;
+      :hover {
+        color: red;
+      }
+    }
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 1rem 0;
+    color: orange;
+    .price-dis {
+      margin-right: 1rem;
+      text-decoration: line-through;
+      font-size: 16px;
+      color: grey;
+    }
+  }
+
+  .add-to-card {
+    border: none;
+    border-radius: 2rem;
+    outline: 0;
+    padding: 6px;
+    font-size: 1rem;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom: 1rem;
+
+    &:hover {
+      opacity: 0.7;
+    }
+    svg {
+      margin-right: 4px;
+    }
+  }
+  &__ustbilgi-dis {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  &__ustbilgi-norm {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  &__ustbilgi p {
+    position: relative;
+    padding: 1rem 10px;
+    border-radius: 100%;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+  }
+}

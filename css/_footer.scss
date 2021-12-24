@@ -1,0 +1,46 @@
+
+.footer{
+    border-top: 4px orange solid;
+    background-image: url(../img/green.jpg);
+    color: white;
+    &__ust{
+        display: flex;
+        flex-direction: row;    
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 30px 150px;
+        border-bottom: 1px solid gray;
+        }
+        h3{
+            margin: 10px 0;
+        }
+        div{
+            display: flex;
+            flex-direction: column; 
+            a{
+                padding: 4px 0;   
+            }   
+            p{
+                padding: 4px 0;   
+            }
+        }
+    &__alt{
+        padding: 10px 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+#iletisim__alt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 40px;
+    margin-top: 10px;
+    &-link svg{
+        width: 20px;
+        height: 20px;
+    }
+}
