@@ -617,20 +617,6 @@ body, html {
   cursor: pointer;
 }
 
-.kampanya__images {
-  width: 100%;
-  height: 400px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 5fr 2fr;
-      grid-template-columns: 5fr 2fr;
-  grid-column-gap: 20px;
-}
-
-.kampanya__images div {
-  border: 1px solid black;
-}
-
 .icons {
   padding: 0 150px;
   margin: 80px 0;
@@ -807,12 +793,29 @@ body, html {
     height: 300px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 2fr 5fr;
-        grid-template-columns: 2fr 5fr;
-    grid-column-gap: 20px;
+    -ms-grid-columns: 3fr 4fr;
+        grid-template-columns: 3fr 4fr;
+    grid-column-gap: 10px;
   }
   .banner__images div:nth-child(1) {
     display: none;
+  }
+  .kampanyalar {
+    margin: 10px 0;
+  }
+  .kampanyalar__title {
+    margin-bottom: 10px;
+  }
+  .kampanyalar__images {
+    width: 100%;
+    height: 300px;
+    -ms-grid-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+    grid-column-gap: 10px;
+  }
+  .kampanya {
+    margin: -150px 0 20px 0;
+    height: 250px;
   }
   .urunler__urun {
     display: -ms-grid;
@@ -823,6 +826,28 @@ body, html {
   }
   .urunler__ustbilgi p {
     font-weight: 400;
+  }
+  .popular {
+    margin: 30px 0;
+  }
+  .popular__title {
+    margin-bottom: 20px;
+  }
+  .popular__images {
+    height: 250px;
+  }
+  .popular__images-card div {
+    padding: 5px;
+  }
+  .icons {
+    margin: 40px 0;
+  }
+  .icons svg {
+    width: 4rem;
+    height: 4rem;
+  }
+  .icons p {
+    font-size: larger;
   }
   #iletisim__alt {
     padding: 0;
@@ -842,6 +867,206 @@ body, html {
   }
   .footer__alt {
     padding: 5px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-first {
+    display: none;
+  }
+  .navbar-third {
+    display: none;
+  }
+  .navbar-second {
+    border-bottom: 4px orange solid;
+    padding: 10px;
+  }
+  .navbar-second-left {
+    display: none;
+  }
+  .navbar-second-right input + svg {
+    width: 1rem;
+    height: 1rem;
+    right: 2rem;
+    top: 2px;
+  }
+  .navbar-second-right svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  .navbar-second-right input {
+    padding: 10px;
+    border-radius: 2rem;
+    font-size: large;
+    width: 12rem;
+  }
+  .banner__images {
+    display: none;
+  }
+  .swiper {
+    height: 250px;
+    margin: 20px auto;
+  }
+  .kampanyalar {
+    text-align: center;
+  }
+  .kampanyalar__images {
+    height: 250px;
+  }
+  .urunler {
+    margin: 20px 0;
+  }
+  .urunler__title {
+    text-align: center;
+  }
+  .urunler__urun {
+    -ms-grid-columns: 3fr 3fr;
+        grid-template-columns: 3fr 3fr;
+  }
+  .urunler__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .urunler__link {
+    max-width: 10rem;
+    padding: 10px 1rem;
+    margin-right: 10px;
+    margin-bottom: 1rem;
+  }
+  .kampanya {
+    height: 200px;
+  }
+  .icons {
+    margin: 20px 0;
+  }
+  .icons svg {
+    width: 3rem;
+    height: 3rem;
+  }
+  .icons p {
+    margin-right: 10px;
+  }
+  .footer__ust {
+    padding: 5px;
+  }
+  .footer__ust h3 {
+    font-size: medium;
+  }
+  .footer__ust div {
+    width: 20vw;
+  }
+  .footer__alt {
+    padding: 5px;
+  }
+  #iletisim__alt {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-second-right input {
+    width: 10rem;
+    text-indent: 8px;
+  }
+  .swiper {
+    height: 200px;
+    margin: 20px auto;
+  }
+  .kampanyalar__images {
+    height: 200px;
+  }
+  .urunler__title {
+    margin-bottom: 10px;
+  }
+  .urunler__link {
+    padding: 10px;
+    margin-right: 5px;
+  }
+  .popular {
+    margin: 20px 0;
+  }
+  .popular__images {
+    display: none;
+  }
+  .popular__images-card {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popular__images-card div {
+    padding: 5px;
+    margin: 10px;
+    color: black;
+    font-weight: 600;
+  }
+  .popular__images-card div h3 {
+    color: black;
+    font-size: x-large;
+  }
+  .popular__images-card div:nth-child(1) {
+    background-image: url(../img/popular.jpg);
+    background-position: center;
+    background-size: cover;
+    background-origin: border-box;
+  }
+  .popular__images-card div:nth-child(2) {
+    background-image: url(../img/popular2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-origin: border-box;
+  }
+  .popular__images-card div:nth-child(3) {
+    background-image: url(../img/popular3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-origin: border-box;
+  }
+  .popular #card-two {
+    color: black;
+  }
+  .popular #card-two h3 {
+    color: black;
+  }
+  .popular #card-two button {
+    background-color: green;
+    color: white;
+  }
+  .kampanya {
+    height: 170px;
+    margin: 20px 0;
+  }
+  .icons p {
+    font-size: large;
+  }
+  .footer__ust {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__ust .kategoriler,
+  .footer__ust .hakkimizda {
+    display: none;
+  }
+  .footer__ust div {
+    width: 30vw;
+  }
+  .footer__alt {
+    padding: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__alt div {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

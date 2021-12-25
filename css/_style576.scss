@@ -1,89 +1,106 @@
 @media (max-width: 576px) {
-  .slider-title__big {
-    font-size: 1.4rem;
-    padding: 5px 10px;
+  .navbar-second-right input {
+    width: 10rem;
+    text-indent: 8px;
   }
-
-  .slider-title__small {
-    font-size: 1rem;
-    padding: 5px 10px;
+  .swiper {
+    height: 200px;
+    margin: 20px auto;
   }
-
-  .entry-form__title {
-    font-size: 2rem;
-    margin-top: -80px;
+  .kampanyalar {
+    &__images {
+      height: 200px;
+    }
   }
-
-  .big-title {
-    font-size: 1.6rem;
-  }
-
-  .number {
-    width: 140px;
-    max-width: 50%;
-
+  .urunler {
     &__title {
-      font-size: 0.9rem;
-      display: inline-block;
+      margin-bottom: 10px;
     }
-
-    &__big {
-      font-size: 2.2rem;
-      display: block;
+    &__link {
+      padding: 10px;
+      margin-right: 5px;
     }
   }
+  .popular {
+    margin: 20px 0;
 
-  .feature-items {
-    max-width: 100%;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    &__images {
+      display: none;
+    }
+    &__images-card {
+      height: auto;
+      display: flex;
+      flex-direction: column;
 
-  .footer-nav__link {
-    font-size: 0.8rem;
-  }
+      div {
+        padding: 5px;
+        margin: 10px;
+        color: black;
+        font-weight: 600;
+        h3 {
+          color: black;
+          font-size: x-large;
+        }
+      }
+      div:nth-child(1) {
+        background-image: url(../img/popular.jpg);
+        background-position: center;
+        background-size: cover;
+        background-origin:border-box;
+      }
+      div:nth-child(2) {
+        background-image: url(../img/popular2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-origin:border-box;
+      }
+      div:nth-child(3) {
+        background-image: url(../img/popular3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-origin:border-box;
+      }
+    }
+    #card-two {
+      color: black;
+      h3 {
+        color: black;
+      }
 
-  .footer-logo {
-    width: 100px;
-  }
-
-  .footer-sosyal {
-    font-size: 0.8rem;
-
-    a {
-      font-size: 0.9rem;
-      margin-left: 10px;
+      button {
+        background-color: green;
+        color: white;
+      }
     }
   }
 
-  .footer-adres,
-  .footer-bulten,
-  .footer-genel,
-  .footer-menu {
-    width: 100%;
-    margin: 0 0 30px;
+  .kampanya {
+    height: 170px;
+    margin: 20px 0;
   }
-
-  .floor-tabs .tab-link{
-    font-size: .9rem;
-    padding: 4px 25px;
+  .icons p {
+    font-size: large;
   }
+  .footer {
+    &__ust {
+      justify-content: center;
 
-  .floor-tabs .tab-link--2{
-    padding-left: 25px;
-  }
+      .kategoriler,
+      .hakkimizda {
+        display: none;
+      }
 
-  .entry-form--contact .entry-form__content{
-    padding: 15px;
-  }
+      div {
+        width: 30vw;
+      }
+    }
+    &__alt {
+      padding: 5px;
+      justify-content: center;
 
-  .entry-form--contact .bi-whatsapp{
-    width: 16px;
-    height: 16px;
-  }
-
-  .entry-form--contact .header-phone{
-    padding-left: 48px;
+      div {
+        display: none;
+      }
+    }
   }
 }

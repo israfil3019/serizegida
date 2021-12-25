@@ -1,57 +1,98 @@
 @media (max-width: 768px) {
-  .navbar-third {
-    .navbar__link {
-      font-weight: 400;
+  .navbar {
+    &-first {
+      display: none;
     }
-
-    &-left {
-      .navbar__item {
-        margin-right: 1rem;
+    &-third {
+      display: none;
+    }
+    &-second {
+      border-bottom: 4px orange solid;
+      padding: 10px;
+      &-left {
+        display: none;
+      }
+      &-right {
+        input + svg {
+          width: 1rem;
+          height: 1rem;
+          right: 2rem;
+          top: 2px;
+        }
+        svg {
+          width: 2rem;
+          height: 2rem;
+        }
+        & input {
+          padding: 10px;
+          border-radius: 2rem;
+          font-size: large;
+          width: 12rem;
+        }
       }
     }
   }
   .banner__images {
-    width: 100%;
-    height: 300px;
-    display: grid;
-    grid-template-columns: 2fr 5fr;
-    grid-column-gap: 20px;
-    div:nth-child(1) {
-      display: none;
+    display: none;
+  }
+  .swiper {
+    height: 250px;
+    margin: 20px auto;
+  }
+  .kampanyalar {
+    text-align: center;
+    &__images {
+      height: 250px;
     }
   }
   .urunler {
+  margin: 20px 0;
+
+    &__title {
+      text-align: center;
+    }
     &__urun {
-      display: grid;
-      grid-gap: 30px 30px;
       grid-template-columns: 3fr 3fr;
     }
-
-    &__ustbilgi p {
-      font-weight: 400;
+    &__buttons{
+      display: flex;
+      justify-content: center;
+    }
+    &__link {
+      max-width: 10rem;
+      padding: 10px 1rem;
+      margin-right: 10px;
+      margin-bottom: 1rem;
+    }
+  }
+  .kampanya {
+    height: 200px;
+  }
+  .icons {
+    margin: 20px 0;
+    svg {
+      width: 3rem;
+      height: 3rem;
+    }
+    p {
+      margin-right: 10px;
+    }
+  }
+  .footer {
+    &__ust {
+      padding: 5px;  
+      h3 {
+        font-size: medium;
+      }
+      div {
+        width: 20vw;
+      }
+    }
+    &__alt {
+      padding: 5px;
     }
   }
   #iletisim__alt {
-    padding: 0;
-    padding-right: 10px;
-    justify-content: flex-start;
-    &-link {
-      padding-right: 5px;
-    }
-  }
-  .footer__ust {
-    padding: 10px;
-    div {
-      padding: 0 10px;
-      a {
-        padding: 4px 0;
-      }
-      p {
-        padding: 4px 0;
-      }
-    }
-  }
-  .footer__alt {
-    padding: 5px 10px;
+    padding-right: 20px;
   }
 }
