@@ -1,0 +1,49 @@
+@media (max-width: 1200px) {
+  .navbar-first {
+    padding: 0 10px;
+  }
+  .navbar-second {
+    padding: 40px 10px;
+    input {
+      width: 15rem;
+    }
+  }
+  .navbar-third {
+    padding: 10px 10px;
+  }
+  .banner {
+    padding: 0 10px;
+  }
+  .kampanyalar {
+    padding: 0 10px;
+  }
+  .urunler {
+    padding: 0 10px;
+    .add-to-card {
+      padding: 4px;
+      width: 70%;
+    }
+  }
+  .popular__images-card {
+    div {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: -150px 10px 0 10px;
+      padding: 10px;
+    }
+    h2 {
+      display: none;
+    }
+  }
+  .kampanya {
+    padding: 0 10px;
+  }
+  .icons {
+    padding: 0 10px;
+  }
+  .footer__ust {
+    padding: 30px 10px;
+  }
+  .footer__alt {
+    padding: 10px;
+  }
+}

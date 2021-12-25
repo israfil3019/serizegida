@@ -1,0 +1,89 @@
+@media (max-width: 576px) {
+  .slider-title__big {
+    font-size: 1.4rem;
+    padding: 5px 10px;
+  }
+
+  .slider-title__small {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+
+  .entry-form__title {
+    font-size: 2rem;
+    margin-top: -80px;
+  }
+
+  .big-title {
+    font-size: 1.6rem;
+  }
+
+  .number {
+    width: 140px;
+    max-width: 50%;
+
+    &__title {
+      font-size: 0.9rem;
+      display: inline-block;
+    }
+
+    &__big {
+      font-size: 2.2rem;
+      display: block;
+    }
+  }
+
+  .feature-items {
+    max-width: 100%;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-nav__link {
+    font-size: 0.8rem;
+  }
+
+  .footer-logo {
+    width: 100px;
+  }
+
+  .footer-sosyal {
+    font-size: 0.8rem;
+
+    a {
+      font-size: 0.9rem;
+      margin-left: 10px;
+    }
+  }
+
+  .footer-adres,
+  .footer-bulten,
+  .footer-genel,
+  .footer-menu {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+
+  .floor-tabs .tab-link{
+    font-size: .9rem;
+    padding: 4px 25px;
+  }
+
+  .floor-tabs .tab-link--2{
+    padding-left: 25px;
+  }
+
+  .entry-form--contact .entry-form__content{
+    padding: 15px;
+  }
+
+  .entry-form--contact .bi-whatsapp{
+    width: 16px;
+    height: 16px;
+  }
+
+  .entry-form--contact .header-phone{
+    padding-left: 48px;
+  }
+}

@@ -159,7 +159,7 @@ body, html {
   border-radius: 3rem;
 }
 
-.navbar-third-right :hover {
+.navbar-third-right:hover {
   background-color: #05c705;
 }
 
@@ -685,11 +685,11 @@ body, html {
   border-bottom: 1px solid gray;
 }
 
-.footer h3 {
+.footer__ust h3 {
   margin: 10px 0;
 }
 
-.footer div {
+.footer__ust div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,11 +699,11 @@ body, html {
           flex-direction: column;
 }
 
-.footer div a {
+.footer__ust div a {
   padding: 4px 0;
 }
 
-.footer div p {
+.footer__ust div p {
   padding: 4px 0;
 }
 
@@ -738,5 +738,110 @@ body, html {
 #iletisim__alt-link svg {
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 1200px) {
+  .navbar-first {
+    padding: 0 10px;
+  }
+  .navbar-second {
+    padding: 40px 10px;
+  }
+  .navbar-second input {
+    width: 15rem;
+  }
+  .navbar-third {
+    padding: 10px 10px;
+  }
+  .banner {
+    padding: 0 10px;
+  }
+  .kampanyalar {
+    padding: 0 10px;
+  }
+  .urunler {
+    padding: 0 10px;
+  }
+  .urunler .add-to-card {
+    padding: 4px;
+    width: 70%;
+  }
+  .popular__images-card div {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: -150px 10px 0 10px;
+    padding: 10px;
+  }
+  .popular__images-card h2 {
+    display: none;
+  }
+  .kampanya {
+    padding: 0 10px;
+  }
+  .icons {
+    padding: 0 10px;
+  }
+  .footer__ust {
+    padding: 30px 10px;
+  }
+  .footer__alt {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-second {
+    padding: 20px 10px;
+  }
+  .navbar-second input {
+    padding: 10px;
+  }
+  .navbar-third .navbar__link {
+    font-weight: 400;
+  }
+  .navbar-third-left .navbar__item {
+    margin-right: 1rem;
+  }
+  .banner__images {
+    width: 100%;
+    height: 300px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 5fr;
+        grid-template-columns: 2fr 5fr;
+    grid-column-gap: 20px;
+  }
+  .banner__images div:nth-child(1) {
+    display: none;
+  }
+  .urunler__urun {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 10px 10px;
+    -ms-grid-columns: 3fr 3fr 3fr;
+        grid-template-columns: 3fr 3fr 3fr;
+  }
+  .urunler__ustbilgi p {
+    font-weight: 400;
+  }
+  #iletisim__alt {
+    padding: 0;
+    padding-right: 50px;
+  }
+  .footer__ust {
+    padding: 10px;
+  }
+  .footer__ust div {
+    padding: 0 10px;
+  }
+  .footer__ust div a {
+    padding: 4px 0;
+  }
+  .footer__ust div p {
+    padding: 4px 0;
+  }
+  .footer__alt {
+    padding: 5px 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
